@@ -1,0 +1,153 @@
+:root {
+  --MainColor: #1e202b;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Nav */
+
+nav {
+  background-color: #1e202b;
+}
+
+.nav-item .nav-link.active {
+  border: 2px solid #009ad8;
+  border-radius: 20px;
+  color: #009ad8;
+  padding: 3px 25px;
+}
+
+.nav-link {
+  transition: 0.4s;
+  border-radius: 20px;
+  color: white;
+  padding: 3px 25px;
+  border: 2px solid transparent;
+}
+.nav-link:hover {
+  border-color: #009ad8;
+  color: #009ad8;
+  transition: 0.4s;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  background-image: url(../img/bars-solid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.navbar-toggler {
+  padding: 15px;
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: transparent;
+  background-color: transparent;
+  border: var(--bs-border-width) solid transparent;
+  border-radius: 15px;
+  transition: var(--bs-navbar-toggler-transition);
+  transition: 0.4s;
+}
+
+.navbar-toggler:hover {
+  border-color: #009ad8;
+  transition: 0.4s;
+}
+
+/* Nav */
+
+/* Main */
+
+#main {
+  background-image: url("../img/pexels-pixabay-209831.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+input#search,
+#sub {
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  background: #1e202b;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.submit {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background: #009ad8;
+  border-radius: 30px;
+  color: white;
+}
+
+.submit:hover {
+  color: white;
+  background: #009ad8;
+}
+
+.main-card-color {
+  background-color: #323544;
+}
+
+.main-header-color {
+  background-color: #2d303d;
+}
+
+.other-card-color {
+  background-color: #262936;
+}
+
+.other-header-color {
+  background-color: #222530;
+}
+
+.mainnum {
+  font-size: 75px;
+}
+/* Main */
+
+/* Footer */
+footer {
+  background-color: #262936;
+}
+
+.social-icons a i {
+  color: #009ad8;
+  background-color: #1e202b;
+  border-radius: 25px;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.social-icons a i:hover {
+  background-color: #009ad8;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Footer */
