@@ -14,12 +14,15 @@ btn.addEventListener("click", function () {
 
 async function UserLocation() {
   let result = await fetch("http://ip-api.com/json", {
-    method: "GET",
-  });
-  if (result.ok) {
-    let response = await result.json();
-    getWeather(response.city);
-  }
+    // method: "GET",
+  }).then((res) => res.json()).then((data) => getWeather(data.city)).catch((err) => console.log(err));
+
+
+
+  // if (result.ok) {
+  //   let response = await result.json();
+  //   getWeather(response.city);
+  // }
 }
 
 async function getWeather(UserLocation) {
