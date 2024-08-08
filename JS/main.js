@@ -24,7 +24,7 @@ async function UserLocation() {
 
 async function getWeather(UserLocation) {
   let result = await fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=70922293e0264ef0ac2211409241506&q=${
+    `http://api.weatherapi.com/v1/forecast.json?key=70922293e0264ef0ac2211409241506&q=${
       UserLocation || Search.value
     }&days=3`
   );
